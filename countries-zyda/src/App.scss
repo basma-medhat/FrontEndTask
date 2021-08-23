@@ -1,5 +1,23 @@
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
 
 .App-logo {
@@ -35,4 +53,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.content {
+  padding: 40px;
 }
