@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import './Details.scss';
 
@@ -16,7 +16,6 @@ const Details = () => {
       )
         .then((response) => response.json())
         .then((data) => {
-          console.log('details', data);
           setCountryDetails(data[0]);
         });
     }
@@ -28,7 +27,9 @@ const Details = () => {
 
   return (
     <div className="details-container">
-      <button onClick={handleBackClick}>Back</button>
+      <button onClick={handleBackClick} className="back-btn">
+        Back
+      </button>
       <div className="details-container-content">
         <img alt="" src={countryDetails?.flag} />
         <div className="details-container-info" style={{ width: '50%' }}>

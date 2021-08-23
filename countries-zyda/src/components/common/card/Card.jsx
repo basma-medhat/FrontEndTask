@@ -16,10 +16,19 @@ const Card = ({
     <div className="card" onClick={handleCardClick} onKeyDown={handleCardClick}>
       <img alt="" src={picURL} className="card-img" />
       <div className="card-info-section">
-        <h3>{title}</h3>
-        <span>{`${subTitle1}: ${subTitleValue1}`}</span>
-        <span>{`${subTitle2}: ${subTitleValue2}`}</span>
-        <span>{`${subTitle3}: ${subTitleValue3}`}</span>
+        <h3 style={{ fontWeight: 'bold' }}>{title}</h3>
+        <div>
+          <span style={{ fontWeight: 'bold' }}>{`${subTitle1}: `}</span>
+          <span>{`${subTitleValue1}`}</span>
+        </div>
+        <div>
+          <span style={{ fontWeight: 'bold' }}>{`${subTitle2}: `}</span>
+          <span>{`${subTitleValue2}`}</span>
+        </div>
+        <div>
+          <span style={{ fontWeight: 'bold' }}>{`${subTitle3}: `}</span>
+          <span>{`${subTitleValue3}`}</span>
+        </div>
       </div>
     </div>
   );

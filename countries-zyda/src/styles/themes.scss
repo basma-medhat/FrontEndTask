@@ -1,0 +1,20 @@
+:root {
+    --black: #222222;
+    --white: #ffffff;
+    --grey: #f8f5f5;
+    --light-grey:#524b4b;
+}
+  
+body.Light {
+    --text: var(--black);
+    --background-color: var(--white);
+    --shadow: var(--grey);
+    --border-btn: var(--grey);
+}
+  
+body.Dark {
+    --text: var(--white);
+    --background-color: var(--black);
+    --shadow: var(--light-grey);
+    --border-btn: var(--light-grey);
+}

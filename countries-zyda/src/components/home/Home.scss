@@ -1,3 +1,24 @@
+@import 'antd/dist/antd.css';
+
+h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+    color: unset;
+}
+
+.countries-toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 40px 0px;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
 .countries-cards-holder {
     display: grid;
     grid-template-columns: auto;

@@ -1,14 +1,18 @@
 .details-container {
     padding: 20px 40px;
+    text-align: left;
 
-    button {
-        align-self: flex-start;
+    .back-btn {
+        padding: 2px 20px;
+        border-color: var(--border-btn);
     }
 
     &-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: 20px;
 
         img {
             width: 100%;
@@ -35,8 +39,8 @@
         &-grid {
             display: grid;
             grid-template-columns: auto;
-            gap: 20px;
-            // grid-auto-rows: minmax(min-content, max-content);
+            gap: 5px;
+            padding: 20px 0px;
         
             @media (min-width: 768px) {
                 grid-template-columns: auto auto;
@@ -49,8 +53,8 @@
     }
 
     .background-span {
-        background-color: white;
-        box-shadow: 2px 2px 2px 2px #f8f5f5;
+        background-color: var(--background-color);
+        box-shadow: 1px 1px 0px 0px var(--shadow);
         margin: 0px 5px;
     }
 
